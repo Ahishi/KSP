@@ -5,7 +5,6 @@ public class GameTest {
 
     @Test
     public void testCompareChoicesTie() {
-        // Test a tie
         int result = Game.compareChoices("kivi", "kivi");
         assertEquals(0, result);
 
@@ -18,7 +17,6 @@ public class GameTest {
 
     @Test
     public void testCompareChoicesPlayer1Wins() {
-        // Test player 1 wins
         int result = Game.compareChoices("kivi", "sakset");
         assertEquals(1, result);
 
@@ -31,7 +29,6 @@ public class GameTest {
 
     @Test
     public void testCompareChoicesPlayer2Wins() {
-        // Test player 2 wins
         int result = Game.compareChoices("kivi", "paperi");
         assertEquals(2, result);
 
